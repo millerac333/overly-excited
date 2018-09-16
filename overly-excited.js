@@ -34,7 +34,7 @@
 // const addExcitment = function(theWordArray) {
 //     let buildMeUp = ""
 //     let specialCharactrer = "!"
-    
+
 //     for (let i = 0; i < theWordArray.length; i++) {
 //             if ((i+1) % 3 === 0){
 //                 console.log(buildMeUp += `${theWordArray[i]} ${specialCharactrer}`);
@@ -55,8 +55,8 @@
 
 // const addExcitment = function(theWordArray) {
 //     let buildMeUp = ""
-//     let specialCharactrer = "!" 
-    
+//     let specialCharactrer = "!"
+
 //     for (let i = 0; i < theWordArray.length; i++) {
 //             if ((i+1) % 3 === 0){
 //                 console.log(buildMeUp += `${theWordArray[i]} ${specialCharactrer}`);
@@ -72,25 +72,48 @@
 // addExcitment(sentenceArray1)
 // addExcitment(sentenceArray2)
 
-// // // PART FOUR
-let sentenceArray1 = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
-let sentenceArray2 =["I", "can", "accept", "failure, ","but", "I", "can't", "accept", "not", "trying"];
+// // // PART THREE, FOUR, AND  ARROW CHALLENGE
+let sentenceArray1 = [
+  "The",
+  "walrus",
+  "danced",
+  "through",
+  "the",
+  "trees",
+  "in",
+  "the",
+  "light",
+  "of",
+  "the",
+  "moon"
+];
+let sentenceArray2 = [
+  "I",
+  "can",
+  "accept",
+  "failure, ",
+  "but",
+  "I",
+  "can't",
+  "accept",
+  "not",
+  "trying"
+];
 
 const addExcitment = (theWordArray, specialCharacterInput) => {
-    let buildMeUp = ""
-    let specialCharactrer = specialCharacterInput 
-    
-    for (let i = 0; i < theWordArray.length; i++) {
-            if ((i+1) % 3 === 0){
-                console.log(buildMeUp += `${theWordArray[i]} ${specialCharactrer}`);
-                specialCharactrer += specialCharacterInput;
-            }
-            else {
-                buildMeUp += " " + theWordArray[i];
-            console.log(buildMeUp);
-            }
-        }
-    }
+  let buildMeUp = "";
+  let specialCharactrer = specialCharacterInput;
 
-addExcitment(sentenceArray1, "?")
-addExcitment(sentenceArray2, "$")
+  for (let i = 0; i < theWordArray.length; i++) {
+    if ((i + 1) % 3 === 0) {
+      console.log((buildMeUp += `${theWordArray[i]} ${specialCharactrer}`));
+      specialCharactrer += specialCharacterInput;
+    } else {
+      buildMeUp += " " + theWordArray[i];
+      console.log(buildMeUp);
+    }
+  }
+};
+
+addExcitment(sentenceArray1, "?");
+addExcitment(sentenceArray2, "$");
